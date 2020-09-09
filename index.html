@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Joke Teller</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <button id="button">Tell Me Sth Dude!</button>
+      <audio id="audio" controls hidden></audio>
+      <p>~~ Before using this project, you need to add your "text to speech" API key in jokeTeller() function in script.js file ~~ <br/>
+      You can get your API key from <a href="http://www.voicerss.org/">http://www.voicerss.org/</a></p>
+    </div>
     <!-- Script  -->
     <script src="script.js"></script>
+    <script src="voicerss-tts.min.js"></script>
     
   </body>
 </html>
